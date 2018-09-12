@@ -1,0 +1,21 @@
+name: CONN_BL_08x01
+description: 2.54 mm Pin Header 8x1
+keywords: Connector, Header
+
+pinout: 1-8
+
+schematic:
+  symbol: connector
+  options: single
+
+housing:
+  pattern: custom
+  options: polarized
+  bodyWidth: 2.54
+  bodyLength: 20.32
+  height: 8.35
+
+  holeDiameter: 0.8
+  pitch: 2.54
+  rowCount: 8
+  columnCount: 1

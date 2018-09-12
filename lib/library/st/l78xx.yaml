@@ -1,0 +1,59 @@
+name: L78xx
+variations: DDPAK, TO220V
+alias: L7805, L7806, L7808, L7885, L7809, L7812, L7815, L7818, L7824
+suffixes: A, C
+description: Positive Voltage Regulator
+datasheet: https://www.st.com/resource/en/datasheet/l78.pdf
+keywords: IC, Analog, LDO, Regulator
+
+pinout@TO220V:
+  VIN: 1
+  GND: 2
+  VOUT: 3
+
+pinout@DDPAK:
+  VOUT: 1
+  VIN: 2
+  GND: 3
+
+properties:
+  power: VIN, VOUT
+  ground: GND
+
+schematic:
+  symbol: IC
+  left: VIN
+  right: VOUT
+  bottom: GND
+
+housing@DDPAK:
+  suffix: D2T-TR
+  pattern: PAK
+  pitch: 5.08
+  bodyWidth: 8.39-8.89
+  bodyLength: 9.91-10.41
+  height: 4.45-4.64
+  leadCount: 2
+  leadWidth: 0.71-0.97
+  leadLength: 1.98
+  leadSpan: 14.35
+  tabWidth: 9.91-10.41
+  tabLength: 6.35
+  tabLedge: 1.27
+
+housing@TO220V:
+  suffix: V, V-DG, P
+  pattern: custom
+
+  bodyLength: 4.4-4.6
+  bodyWidth: 10-10.4
+  height: 19.05
+  
+  holeDiameter: 1.02
+  rowCount: 1
+  columnCount: 3
+  pitch: 2.54
+  rowDY: 0.29
+  
+  
+  

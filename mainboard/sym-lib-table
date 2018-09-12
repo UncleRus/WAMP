@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name WAMP)(type Legacy)(uri ${KIPRJMOD}/../lib/kicad/WAMP.lib)(options "")(descr ""))
+  (lib (name utils)(type Legacy)(uri ${KIPRJMOD}/../lib/kicad/utils.lib)(options "")(descr ""))
+)

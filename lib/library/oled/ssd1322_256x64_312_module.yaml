@@ -1,0 +1,43 @@
+name: SSD1322_256x64_312_module
+description: 3.12 inch OLED screen 256x64 SSD1322 module
+keywords: OLED, Display
+
+pinout:
+  DATA:
+    D0-7: 9-16
+  CTRL:
+    ~RES: 4
+    ~CS: 5
+    D/C: 6
+    R/~W: 7
+    E/~RD: 8
+  VCC: 1
+  GND: 2, 3
+  
+properties:
+  in: CTRL
+  bidir: DATA
+  power: VCC
+  ground: GND
+
+schematic:
+  symbol: IC
+  left: CTRL, DATA, VCC, GND
+
+housing:
+  pattern: custom
+  options: polarized
+
+  bodyWidth: 102
+  bodyLength: 35
+  height: 5
+  
+  holeDiameter: 1
+  pitch: 2.54
+  columnCount: 2
+  rowCount: 8
+  rowDX: 48.03
+  
+  holeDiameter1: 3.0
+  padPosition1: -48.4, -14.9, -48.4, 14.9, 48.4, -14.9, 48.4, 14.9
+  

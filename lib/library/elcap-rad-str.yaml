@@ -1,0 +1,125 @@
+name: ELCAP
+description: Electrolytic radial capacitor with straight leads
+keywords: Capacitor
+variations: D4H8, D5H8, D5H13, D6.5H8, D6.5H13, D8H8, D8H22, D10H27, D12H27, D12.5H27, D13H27, D16H27, D18H27
+
+schematic:
+  symbol: capacitor
+  options: polarized
+
+housing@D4H8:
+  pattern: radial
+  options: diameter, polarized
+  bodyDiameter: 4
+  height: 8
+  leadSpan: 1.5
+  leadDiameter: 0.45
+  suffix: -D4H8
+
+housing@D5H8:
+  pattern: radial
+  options: diameter, polarized
+  bodyDiameter: 5
+  height: 8
+  leadSpan: 2
+  leadDiameter: 0.45
+  suffix: -D5H8
+
+housing@D5H13:
+  pattern: radial
+  options: diameter, polarized
+  bodyDiameter: 5
+  height: 13
+  leadSpan: 2
+  leadDiameter: 0.5
+  suffix: -D5H13
+
+housing@D6.5H8:
+  pattern: radial
+  options: diameter, polarized
+  bodyDiameter: 6.5
+  height: 8
+  leadSpan: 2.5
+  leadDiameter: 0.5
+  suffix: -D6.5H8
+
+housing@D6.5H13:
+  pattern: radial
+  options: diameter, polarized
+  bodyDiameter: 6.5
+  height: 13
+  leadSpan: 2.5
+  leadDiameter: 0.5
+  suffix: -D6.5H13
+
+housing@D8H8:
+  pattern: radial
+  options: diameter, polarized
+  bodyDiameter: 8
+  height: 8
+  leadSpan: 3.5
+  leadDiameter: 0.5
+  suffix: -D8H8
+
+housing@D8H22:
+  pattern: radial
+  options: diameter, polarized
+  bodyDiameter: 8
+  height: 22
+  leadSpan: 3.5
+  leadDiameter: 0.5
+  suffix: -D8H22
+
+housing@D10H27:
+  pattern: radial
+  options: diameter, polarized
+  bodyDiameter: 10
+  height: 27
+  leadSpan: 5
+  leadDiameter: 0.6
+  suffix: -D10H27
+
+housing@D12H27:
+  pattern: radial
+  options: diameter, polarized
+  bodyDiameter: 12
+  height: 27
+  leadSpan: 5
+  leadDiameter: 0.6
+  suffix: -D12H27
+
+housing@D12.5H27:
+  pattern: radial
+  options: diameter, polarized
+  bodyDiameter: 12.5
+  height: 27
+  leadSpan: 5
+  leadDiameter: 0.6
+  suffix: -D12.5H27
+
+housing@D13H27:
+  pattern: radial
+  options: diameter, polarized
+  bodyDiameter: 13
+  height: 27
+  leadSpan: 5
+  leadDiameter: 0.6
+  suffix: -D13H27
+
+housing@D16H27:
+  pattern: radial
+  options: diameter, polarized
+  bodyDiameter: 16
+  height: 27
+  leadSpan: 6.7-8.3
+  leadDiameter: 0.8
+  suffix: -D16H27
+
+housing@D18H27:
+  pattern: radial
+  options: diameter, polarized
+  bodyDiameter: 18
+  height: 27
+  leadSpan: 6.7-8.3
+  leadDiameter: 0.8
+  suffix: -D18H27

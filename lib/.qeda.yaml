@@ -1,0 +1,39 @@
+config:
+  output: kicad
+  pattern:
+    clearance:
+      padToMask: 0.2
+      padToPad: 0.2
+    minimum:
+      drillDiameter: 0.3
+  symbol:
+    style: GOST
+ground:
+  - AGND
+  - GND
+  - chassis/CGND
+library:
+  - tda7439
+  - resistor/r0805
+  - capacitor/c0805
+  - espressif/esp32-wroom-32
+  - st/ld1117
+  - elcap-rad-str
+  - con/con_bl_03x01
+  - con/con_bl_05x01
+  - vt/mmbt3904
+  - pcf8574
+  - oled/ssd1322_256x64_312_module
+  - rrd102
+  - buttons/dts-6
+  - con/con_bl_08x01
+  - st/tl072
+  - con/con_bl_06x01
+  - st/l78xx
+  - ti/uln200x
+power:
+  - +12V
+  - +5V
+  - +3V3
+  - '-12V'
+  - +9V

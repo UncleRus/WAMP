@@ -1,0 +1,25 @@
+name: DTS-6
+description: Tact switch
+datasheet: https://www.promelec.ru/pdf/2062_89-DTSG-6.pdf
+keywords: Pushbutton
+
+pinout:
+  S1: 1, 2
+  S2: 3, 4
+
+schematic:
+  symbol: pushbutton
+  left: S1
+  right: S2
+
+housing:
+  pattern: custom
+  bodyWidth: 6.2
+  bodyLength: 6.2
+  height: 4.3
+
+  holeDiameter: 1
+  rowCount: 2
+  columnCount: 2
+  horizontalPitch: 6.5
+  verticalPitch: 4.5

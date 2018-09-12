@@ -1,0 +1,214 @@
+EESchema-DOCLIB  Version 2.0 Date: 08/09/2018 23:14:28
+#
+$CMP TDA7439DS
+D Three-band digitally-controlled audio processor
+K IC, Analog, Audio, Device
+$ENDCMP
+#
+$CMP R0805
+D Chip resistor 2x1.25 mm
+K Resistor, 1/8W
+$ENDCMP
+#
+$CMP C0805
+D Chip capacitor 2x1.25 mm
+K Capacitor
+$ENDCMP
+#
+$CMP ESP32-WROOM-32
+D Wi-Fi, Bluetooth, BLE, MCU module
+K Digital, MCU, Module
+F https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
+$ENDCMP
+#
+$CMP LD1117S
+D Adjustable and Fixed Low Drop Positive Voltage Regulator
+K IC, Analog, LDO, Regulator
+F http://www.st.com/resource/en/datasheet/ld1117.pdf
+$ENDCMP
+#
+$CMP ELCAP-D4H8
+D Electrolytic radial capacitor with straight leads
+K Capacitor
+$ENDCMP
+#
+$CMP ELCAP-D5H8
+D Electrolytic radial capacitor with straight leads
+K Capacitor
+$ENDCMP
+#
+$CMP ELCAP-D5H13
+D Electrolytic radial capacitor with straight leads
+K Capacitor
+$ENDCMP
+#
+$CMP ELCAP-D6.5H8
+D Electrolytic radial capacitor with straight leads
+K Capacitor
+$ENDCMP
+#
+$CMP ELCAP-D6.5H13
+D Electrolytic radial capacitor with straight leads
+K Capacitor
+$ENDCMP
+#
+$CMP ELCAP-D8H8
+D Electrolytic radial capacitor with straight leads
+K Capacitor
+$ENDCMP
+#
+$CMP ELCAP-D8H22
+D Electrolytic radial capacitor with straight leads
+K Capacitor
+$ENDCMP
+#
+$CMP ELCAP-D10H27
+D Electrolytic radial capacitor with straight leads
+K Capacitor
+$ENDCMP
+#
+$CMP ELCAP-D12H27
+D Electrolytic radial capacitor with straight leads
+K Capacitor
+$ENDCMP
+#
+$CMP ELCAP-D12.5H27
+D Electrolytic radial capacitor with straight leads
+K Capacitor
+$ENDCMP
+#
+$CMP ELCAP-D13H27
+D Electrolytic radial capacitor with straight leads
+K Capacitor
+$ENDCMP
+#
+$CMP ELCAP-D16H27
+D Electrolytic radial capacitor with straight leads
+K Capacitor
+$ENDCMP
+#
+$CMP ELCAP-D18H27
+D Electrolytic radial capacitor with straight leads
+K Capacitor
+$ENDCMP
+#
+$CMP CONN_BL_03x01
+D 2.54 mm Pin Header 3x1
+K Connector, Header
+$ENDCMP
+#
+$CMP CONN_BL_05x01
+D 2.54 mm Pin Header 5x1
+K Connector, Header
+$ENDCMP
+#
+$CMP MMBT3904
+D 40V 0.2A 300mW NPN General Purpose Transistor
+K Transistor, NPN
+$ENDCMP
+#
+$CMP PCF8574P
+D Remote 8-bit I/O expander for I2C-bus
+K IC, Digital, Interface, I2C, IO
+$ENDCMP
+#
+$CMP PCF8574T
+D Remote 8-bit I/O expander for I2C-bus
+K IC, Digital, Interface, I2C, IO
+$ENDCMP
+#
+$CMP SSD1322_256x64_312_module
+D 3.12 inch OLED screen 256x64 SSD1322 module
+K OLED, Display
+$ENDCMP
+#
+$CMP RRD-102_2.0
+D Digitally controlled FM radio receiver module
+K IC, Digital, Radio, FM-radio, Receiver, Demodulator
+$ENDCMP
+#
+$CMP DTS-6
+D Tact switch
+K Pushbutton
+F https://www.promelec.ru/pdf/2062_89-DTSG-6.pdf
+$ENDCMP
+#
+$CMP CONN_BL_08x01
+D 2.54 mm Pin Header 8x1
+K Connector, Header
+$ENDCMP
+#
+$CMP TL072N
+D Dual Operational Amplifier
+K IC, Analog, OpAmp
+F https://www.promelec.ru/pdf/tl072.pdf
+$ENDCMP
+#
+$CMP TL072D
+D Dual Operational Amplifier
+K IC, Analog, OpAmp
+F https://www.promelec.ru/pdf/tl072.pdf
+$ENDCMP
+#
+$CMP CONN_BL_06x01
+D 2.54 mm Pin Header 6x1
+K Connector, Header
+$ENDCMP
+#
+$CMP L78xxD2T-TR
+D Positive Voltage Regulator
+K IC, Analog, LDO, Regulator
+F https://www.st.com/resource/en/datasheet/l78.pdf
+$ENDCMP
+#
+$CMP L78xxV
+D Positive Voltage Regulator
+K IC, Analog, LDO, Regulator
+F https://www.st.com/resource/en/datasheet/l78.pdf
+$ENDCMP
+#
+$CMP ULN2003AN
+D High-voltage high-current Darlington transistor array
+K IC, Analog, Transistor, Darlington
+F http://www.ti.com/lit/ds/symlink/uln2003a.pdf
+$ENDCMP
+#
+$CMP ULN2003AD
+D High-voltage high-current Darlington transistor array
+K IC, Analog, Transistor, Darlington
+F http://www.ti.com/lit/ds/symlink/uln2003a.pdf
+$ENDCMP
+#
+$CMP +12V
+D Power Symbol
+$ENDCMP
+#
+$CMP +5V
+D Power Symbol
+$ENDCMP
+#
+$CMP +3V3
+D Power Symbol
+$ENDCMP
+#
+$CMP -12V
+D Power Symbol
+$ENDCMP
+#
+$CMP +9V
+D Power Symbol
+$ENDCMP
+#
+$CMP AGND
+D Ground Symbol
+$ENDCMP
+#
+$CMP GND
+D Ground Symbol
+$ENDCMP
+#
+$CMP CGND
+D Chassis Ground Symbol
+$ENDCMP
+#
+# End Doc Library

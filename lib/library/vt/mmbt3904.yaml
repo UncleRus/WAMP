@@ -1,0 +1,23 @@
+name: MMBT3904
+alias: MMBT3904L, SMMBT3904L
+description: 40V 0.2A 300mW NPN General Purpose Transistor
+keywords: Transistor, NPN
+
+pinout:
+  B: 1
+  E: 2
+  C: 3
+
+properties:
+  in: B
+  passive: C, E
+
+schematic:
+  symbol: transistor
+  options: npn
+
+housing:
+  outline: JEDEC TO-236 AB
+  padWidth: 0.9
+  padHeight: 0.8
+  #padDistance: 2

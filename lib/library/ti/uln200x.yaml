@@ -1,0 +1,44 @@
+name: ULN2003A
+variations: DIP16, SO16
+alias: ULN2002A, ULN2004A, ULQ2003A, ULQ2004A
+description: High-voltage high-current Darlington transistor array
+datasheet: http://www.ti.com/lit/ds/symlink/uln2003a.pdf
+keywords: IC, Analog, Transistor, Darlington
+
+pinout:
+  B:
+    1B: 1
+    2B: 2
+    3B: 3
+    4B: 4
+    5B: 5
+    6B: 6
+    7B: 7
+  E: 8
+  C:
+    1C: 16
+    2C: 15
+    3C: 14
+    4C: 13
+    5C: 12
+    6C: 11
+    7C: 10
+  COM: 9
+  
+properties:
+  in: B
+  out: E
+  passive: COM
+
+schematic:
+  symbol: IC
+  left: B, E
+  right: C, COM
+
+housing@DIP16:
+  outline: JEDEC MS-001 AB
+  suffix: N
+
+housing@SO16:
+  suffix: D, NS
+  outline: JEDEC MS-012 AC

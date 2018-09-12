@@ -1,0 +1,147 @@
+
+(rules PCB mainboard
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 4205)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.5)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+  )
+  (rule
+    (width 300.0)
+    (clear 200.2)
+    (clear 150.0 (type smd_to_turn_gap))
+    (clear 300.2 (type default_Analog))
+    (clear 300.2 (type default_Power))
+    (clear 50.0 (type smd_smd))
+    (clear 300.2 (type smd_Analog))
+    (clear 300.2 (type smd_Power))
+    (clear 300.2 (type "kicad_default"_Analog))
+    (clear 300.2 (type "kicad_default"_Power))
+    (clear 300.2 (type Analog_Analog))
+    (clear 300.2 (type Analog_Digital))
+    (clear 300.2 (type Analog_Power))
+    (clear 300.2 (type Digital_Power))
+    (clear 300.2 (type Power_Power))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Analog" "Via[0-1]_800:400_um" Analog
+  )
+  (via 
+    "Via[0-1]_800:400_um-Digital" "Via[0-1]_800:400_um" Digital
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    Analog "Via[0-1]_800:400_um-Analog"
+  )
+  (via_rule
+    Digital "Via[0-1]_800:400_um-Digital"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(C5-Pad1)" "Net-(DA3-Pad8)" "Net-(DA3-Pad9)" "Net-(DA4-Pad2)" "Net-(DA4-Pad3)" "Net-(DA4-Pad6)" "Net-(DD1-Pad4)" "Net-(DD1-Pad5)"
+    "Net-(DD1-Pad8)" "Net-(DD1-Pad9)" "Net-(DD1-Pad14)" "Net-(DD1-Pad17)" "Net-(DD1-Pad18)" "Net-(DD1-Pad19)" "Net-(DD1-Pad20)" "Net-(DD1-Pad21)"
+    "Net-(DD1-Pad22)" "Net-(DD1-Pad23)" "Net-(DD1-Pad24)" "Net-(DD1-Pad29)" "Net-(R26-Pad2)" "Net-(R26-Pad1)" "Net-(R6-Pad1)" "Net-(K1-Pad10)"
+    /ONEWIRE "Net-(D1-Pad11)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Analog
+    "Net-(C1-Pad2)" "Net-(C1-Pad1)" "Net-(C2-Pad1)" "Net-(C2-Pad2)" "Net-(C3-Pad1)" "Net-(C3-Pad2)" "Net-(C4-Pad2)" "Net-(C4-Pad1)"
+    "/TREB_L" "/MIN_L" "Net-(C11-Pad1)" "/MOUT_L" "Net-(C13-Pad1)" "/BIN_L" "/BOUT_L" "/TREB_R"
+    "/MIN_R" "Net-(C18-Pad1)" "/MOUT_R" "/BIN_R" "Net-(C20-Pad1)" "/BOUT_R" /LOUT /ROUT
+    "Net-(K1-Pad8)" "Net-(K1-Pad3)" "Net-(K1-Pad6)" "Net-(K1-Pad5)"
+    (clearance_class Analog)
+    (via_rule Analog)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Digital
+    "/RE_BTN" "/RE_B" "/RE_A" /EN "/B_DISPLAY" "/B_MUTE" "/B_INPUT" "/B_PHONES"
+    "/B_DEFEAT" "/B_SETTINGS" "/B_PLUS" "/B_MINUS" /RES /CS0 /DC /SCLK
+    /MOSI /SDA /SCL /ADC6 /ADC7 /BINT "/PH_SW" /IO0
+    /RXD /TXD "Net-(R25-Pad2)" "Net-(R25-Pad1)"
+    (clearance_class Digital)
+    (via_rule Digital)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    GND AGND +5V +12V +3V3 +9V "-12V"
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

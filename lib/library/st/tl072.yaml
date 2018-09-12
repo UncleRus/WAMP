@@ -1,0 +1,43 @@
+name: TL072
+variations: DIP, SO
+alias: TL072A, TL072B, TL072C
+datasheet: https://www.promelec.ru/pdf/tl072.pdf
+description: Dual Operational Amplifier
+keywords: IC, Analog, OpAmp
+
+pinout:
+  1OUT: 1
+  1IN:
+    1IN+: 3
+    1IN-: 2
+  VCC-: 4
+  2IN:
+    2IN+: 5
+    2IN-: 6
+  2OUT: 7
+  VCC+: 8
+
+properties:
+  power: VCC-, VCC+
+  in: 1IN+, 1IN-, 2IN+, 2IN-
+  out: 1OUT, 2OUT
+  inverted: 1IN-, 2IN-
+
+schematic:
+  symbol: IC
+  left: 1IN, 2IN
+  right: 1OUT, 2OUT
+  top: VCC+
+  bottom: VCC-
+
+parts:
+  OpAmp 1: 1IN, 1OUT, VCC+, VCC-
+  OpAmp 2: 2IN, 2OUT
+
+housing@DIP:
+  outline: JEDEC MS-001 BA
+  suffix: N
+
+housing@SO:
+  outline: JEDEC MS-012 AA
+  suffix: D

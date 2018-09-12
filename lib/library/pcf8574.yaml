@@ -1,0 +1,47 @@
+name: PCF8574
+variations: DIP16, SO16
+description: Remote 8-bit I/O expander for I2C-bus
+keywords: IC, Digital, Interface, I2C, IO
+
+pinout:
+  ADDR:
+    A0-2: 1-3
+  PORT:
+    P0-7: 4-7, 9-12
+  I2C:
+    SCL: 14
+    SDA: 15
+  ~INT: 13
+  VSS: 8
+  VDD: 16
+  
+properties:
+  in: ADDR
+  out: ~INT
+  bidir: I2C, PORT
+  power: VDD
+  ground: VSS
+
+schematic:
+  symbol: IC
+  left: I2C, ~INT, ADDR
+  right: PORT
+  top: VDD
+  bottom: VSS
+
+housing@DIP16:
+  outline: JEDEC MS-001 AB
+  suffix: P, AP
+
+housing@SO16:
+  pattern: SOIC
+  suffix: T, AT
+
+  pitch: 1.27
+  bodyWidth: 7.4-7.6
+  bodyLength: 10.1-10.5
+  leadLength: 0.4-1.27
+  leadSpan: 9.2-9.6
+  leadWidth: 0.31-0.51
+  height: 2.25-2.45
+  leadCount: 16

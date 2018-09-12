@@ -1,0 +1,60 @@
+name: TDA7439
+variations: SO28
+description: Three-band digitally-controlled audio processor
+keywords: IC, Analog, Audio, Device
+
+pinout@SO28:
+  IN:
+    L_IN1: 4
+    R_IN1: 3
+    L_IN2: 5
+    R_IN2: 2
+    L_IN3: 6
+    R_IN3: 1
+    L_IN4: 7
+    R_IN4: 28
+  OUT:
+    LOUT: 27
+    ROUT: 26
+  MUXOUT:
+    MUXOUTL: 8
+    MUXOUTR: 9
+  FILTER:
+    MIN(L): 17
+    MOUT(L): 16
+    MIN(R): 10
+    MOUT(R): 11
+    BIN(L): 14
+    BOUT(L): 15
+    BIN(R): 12
+    BOUT(R): 13
+    TREBLE(L): 18
+    TREBLE(R): 19
+  I2C:
+    SCL: 21
+    SDA: 22
+  
+  VS: 24
+  DGND: 20
+  AGND: 25
+
+  CREF: 23
+  
+properties:
+  in: IN
+  out: OUT, MUXOUT
+  bidir: I2C
+  power: VS
+  ground: AGND, DGND
+  passive: FILTER, CREF
+
+schematic:
+  symbol: IC
+  left: I2C, IN, MUXOUT, CREF
+  right: OUT, FILTER
+  top: VS
+  bottom: DGND, AGND
+
+housing@SO28:
+  outline: JEDEC MS-013 AE
+  suffix: DS

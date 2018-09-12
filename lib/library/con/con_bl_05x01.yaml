@@ -1,0 +1,21 @@
+name: CONN_BL_05x01
+description: 2.54 mm Pin Header 5x1
+keywords: Connector, Header
+
+pinout: 1-5
+
+schematic:
+  symbol: connector
+  options: single
+
+housing:
+  pattern: custom
+  options: polarized
+  bodyWidth: 2.54
+  bodyLength: 12.7
+  height: 8.35
+
+  holeDiameter: 0.8
+  pitch: 2.54
+  rowCount: 5
+  columnCount: 1

@@ -1,0 +1,94 @@
+name: ESP32-WROOM-32
+description: Wi-Fi, Bluetooth, BLE, MCU module
+datasheet: https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
+keywords: Digital, MCU, Module
+
+pinout:
+  EN: 3
+  SENSOR:
+    SENSOR_VP: 4
+    SENSOR_VN: 5
+  STRAP:
+    IO0: 25
+    IO2: 24
+    IO5: 29
+    IO12/MTDI: 14
+    IO15/MTDO: 23
+  IO:
+    IO4: 26
+    IO13: 16
+    IO14: 13
+    IO16: 27
+    IO17: 28
+    IO18: 30
+    IO19: 31
+    IO21: 33
+    IO22: 36
+    IO23: 37
+    IO25: 10
+    IO26: 11
+    IO27: 12
+    IO32: 8
+    IO33: 9
+    IO34: 6
+    IO35: 7
+  SPIFLASH:
+    SCS/CMD: 19
+    SCK/CLK: 20
+    SDO/SD0: 21
+    SDI/SD1: 22
+    SHD/SD2: 17
+    SWP/SD3: 18
+  UART:
+    RXD0/GPIO3: 34
+    TXD0/GPIO1: 35
+  3V3: 2
+  GND: 1, 15, 38, 39
+  NC: 32
+
+properties:
+  bidir: IO, STRAP, UART, SPIFLASH
+  in: EN, SENSOR, IO34, IO45
+  power: 3V3
+  ground: GND
+  nc: NC
+
+schematic:
+  symbol: IC
+  left: EN, UART, SENSOR, STRAP, SPIFLASH
+  right: IO
+  top: 3V3
+  bottom: GND
+  
+housing:
+  pattern: custom
+  options: polarized
+  bodyWidth: 18
+  bodyLength: 25.5
+  bodyPosition: 0, -3.15
+  height: 3.1
+
+  padWidth1: 2
+  padHeight1: 0.9
+  columnCount1: 1
+  rowCount1: 14
+  pitch1: 1.27
+  rowDX1: -8.5
+
+  padWidth2: 0.9
+  padHeight2: 2
+  columnCount2: 10
+  rowCount2: 1
+  pitch2: 1.27
+  rowDY2: 9.35
+  
+  padWidth3: 2
+  padHeight3: 0.9
+  columnCount3: 1
+  rowCount3: 14
+  pitch3: -1.27
+  rowDX3: 8.5
+
+  padWidth4: 5
+  padHeight4: 5
+  padPosition4: -1, -0.91

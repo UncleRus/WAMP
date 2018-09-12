@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name WAMP)(type KiCad)(uri ${KIPRJMOD}/../lib/kicad/WAMP.pretty)(options "")(descr ""))
+  (lib (name con-amphenol)(type Legacy)(uri ${KIPRJMOD}/../lib/kicad/con-amphenol.mod)(options "")(descr ""))
+  (lib (name utils)(type KiCad)(uri ${KIPRJMOD}/../lib/kicad/utils.pretty)(options "")(descr ""))
+)

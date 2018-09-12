@@ -1,0 +1,48 @@
+name: RRD-102_2.0
+description: Digitally controlled FM radio receiver module
+keywords: IC, Digital, Radio, FM-radio, Receiver, Demodulator
+
+pinout:
+  I2C:
+    SDA: 1
+    SCL: 2
+  GPIO:
+    GPIO2: 3
+    GPIO3: 4
+  OUT:
+    AFL: 7
+    AFR: 8
+  RCK: 9
+  ANT: 10
+
+  VDD: 5
+  GND: 6
+  
+properties:
+  in: SCL
+  out: OUT
+  bidir: SDA, GPIO, RCK
+  passive: ANT
+  power: VDD
+  ground: GND
+
+schematic:
+  symbol: IC
+  left: I2C, GPIO, RCK
+  right: ANT, OUT
+  top: VDD
+  bottom: GND
+
+housing:
+  pattern: SON
+  bodyWidth: 11.2
+  bodyLength: 11.2
+  height: 2
+  leadWidth: 1
+  leadLength: 1
+  leadCount: 10
+  pitch: 2
+
+  padWidth: 2.2
+  padHeight: 1.25
+  #padDistance: 16

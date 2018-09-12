@@ -1,0 +1,21 @@
+name: CONN_BL_06x01
+description: 2.54 mm Pin Header 6x1
+keywords: Connector, Header
+
+pinout: 1-6
+
+schematic:
+  symbol: connector
+  options: single
+
+housing:
+  pattern: custom
+  options: polarized
+  bodyWidth: 2.54
+  bodyLength: 15.24
+  height: 8.35
+
+  holeDiameter: 0.8
+  pitch: 2.54
+  rowCount: 6
+  columnCount: 1
