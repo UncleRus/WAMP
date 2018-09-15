@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0 Date: 08/09/2018 23:14:28
+EESchema-DOCLIB  Version 2.0 Date: 15/09/2018 19:30:08
 #
 $CMP TDA7439DS
 D Three-band digitally-controlled audio processor
@@ -97,8 +97,23 @@ D 2.54 mm Pin Header 3x1
 K Connector, Header
 $ENDCMP
 #
+$CMP CONN_BL_04x01
+D 2.54 mm Pin Header 4x1
+K Connector, Header
+$ENDCMP
+#
 $CMP CONN_BL_05x01
 D 2.54 mm Pin Header 5x1
+K Connector, Header
+$ENDCMP
+#
+$CMP CONN_BL_07x01
+D 2.54 mm Pin Header 7x1
+K Connector, Header
+$ENDCMP
+#
+$CMP CONN_BL_09x01
+D 2.54 mm Pin Header 9x1
 K Connector, Header
 $ENDCMP
 #

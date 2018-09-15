@@ -20,7 +20,10 @@ library:
   - st/ld1117
   - elcap-rad-str
   - con/con_bl_03x01
+  - con/con_bl_04x01
   - con/con_bl_05x01
+  - con/con_bl_07x01
+  - con/con_bl_09x01
   - vt/mmbt3904
   - pcf8574
   - oled/ssd1322_256x64_312_module

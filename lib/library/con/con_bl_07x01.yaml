@@ -1,8 +1,8 @@
-name: CONN_BL_04x01
-description: 2.54 mm Pin Header 4x1
+name: CONN_BL_07x01
+description: 2.54 mm Pin Header 7x1
 keywords: Connector, Header
 
-pinout: 1-4
+pinout: 1-7
 
 schematic:
   symbol: connector
@@ -12,10 +12,10 @@ housing:
   pattern: custom
   options: polarized
   bodyWidth: 2.54
-  bodyLength: 10.16
+  bodyLength: 17.78
   height: 8.35
 
   holeDiameter: 0.8
   pitch: 2.54
-  rowCount: 4
+  rowCount: 7
   columnCount: 1
