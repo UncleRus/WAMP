@@ -1,4 +1,4 @@
-update=Чт 20 сен 2018 23:50:20
+update=Вс 16 сен 2018 02:37:56
 version=1
 last_client=kicad
 [general]
@@ -35,8 +35,8 @@ LibDir=
 version=1
 PageLayoutDescrFile=
 PlotDirectoryName=
-SubpartIdSeparator=46
-SubpartFirstId=49
+SubpartIdSeparator=0
+SubpartFirstId=65
 NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
 LabSize=50

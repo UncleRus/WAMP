@@ -1,0 +1,45 @@
+name: LM358
+variations: MiniSO8, SO8, TSSOP
+alias: LM358A
+description: Dual Operational Amplifier
+keywords: IC, Analog, OpAmp
+
+pinout:
+  1OUT: 1
+  1IN:
+    1IN+: 3
+    1IN-: 2
+  GND: 4
+  2IN:
+    2IN+: 5
+    2IN-: 6
+  2OUT: 7
+  VCC: 8
+
+properties:
+  power: VCC
+  ground: GND
+  in: 1IN+, 1IN-, 2IN+, 2IN-
+  out: 1OUT, 2OUT
+  inverted: 1IN-, 2IN-
+
+schematic:
+  symbol: IC
+  left: 1IN, 2IN, VCC
+  right: 1OUT, 2OUT, GND
+
+parts:
+  OpAmp 1: 1IN, 1OUT, VCC, GND
+  OpAmp 2: 2IN, 2OUT
+
+housing@MiniSO8:
+  outline: JEDEC MO-187 AA
+  suffix: ST
+
+housing@SO8:
+  outline: JEDEC MS-012 AA
+  suffix: DT
+
+housing@TSSOP:
+  outline: JEDEC MO-153 AA
+  suffix: PT

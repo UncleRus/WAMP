@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0 Date: 15/09/2018 19:30:08
+EESchema-DOCLIB  Version 2.0 Date: 21/09/2018 18:30:54
 #
 $CMP TDA7439DS
 D Three-band digitally-controlled audio processor
@@ -92,6 +92,11 @@ D Electrolytic radial capacitor with straight leads
 K Capacitor
 $ENDCMP
 #
+$CMP CONN_BL_02x01
+D 2.54 mm Pin Header 2x1
+K Connector, Header
+$ENDCMP
+#
 $CMP CONN_BL_03x01
 D 2.54 mm Pin Header 3x1
 K Connector, Header
@@ -107,8 +112,18 @@ D 2.54 mm Pin Header 5x1
 K Connector, Header
 $ENDCMP
 #
+$CMP CONN_BL_06x01
+D 2.54 mm Pin Header 6x1
+K Connector, Header
+$ENDCMP
+#
 $CMP CONN_BL_07x01
 D 2.54 mm Pin Header 7x1
+K Connector, Header
+$ENDCMP
+#
+$CMP CONN_BL_08x01
+D 2.54 mm Pin Header 8x1
 K Connector, Header
 $ENDCMP
 #
@@ -148,11 +163,6 @@ K Pushbutton
 F https://www.promelec.ru/pdf/2062_89-DTSG-6.pdf
 $ENDCMP
 #
-$CMP CONN_BL_08x01
-D 2.54 mm Pin Header 8x1
-K Connector, Header
-$ENDCMP
-#
 $CMP TL072N
 D Dual Operational Amplifier
 K IC, Analog, OpAmp
@@ -165,9 +175,19 @@ K IC, Analog, OpAmp
 F https://www.promelec.ru/pdf/tl072.pdf
 $ENDCMP
 #
-$CMP CONN_BL_06x01
-D 2.54 mm Pin Header 6x1
-K Connector, Header
+$CMP LM358ST
+D Dual Operational Amplifier
+K IC, Analog, OpAmp
+$ENDCMP
+#
+$CMP LM358DT
+D Dual Operational Amplifier
+K IC, Analog, OpAmp
+$ENDCMP
+#
+$CMP LM358PT
+D Dual Operational Amplifier
+K IC, Analog, OpAmp
 $ENDCMP
 #
 $CMP L78xxD2T-TR
@@ -192,6 +212,26 @@ $CMP ULN2003AD
 D High-voltage high-current Darlington transistor array
 K IC, Analog, Transistor, Darlington
 F http://www.ti.com/lit/ds/symlink/uln2003a.pdf
+$ENDCMP
+#
+$CMP R1206
+D Chip resistor 3.1x1.55 mm
+K Resistor, 1/4W
+$ENDCMP
+#
+$CMP LM393N
+D Dual Operational Amplifier
+K IC, Analog, OpAmp
+$ENDCMP
+#
+$CMP LM393M
+D Dual Operational Amplifier
+K IC, Analog, OpAmp
+$ENDCMP
+#
+$CMP C1206
+D Chip capacitor 3.2x1.6 mm
+K Capacitor
 $ENDCMP
 #
 $CMP +12V

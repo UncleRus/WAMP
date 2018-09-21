@@ -1,0 +1,21 @@
+name: CONN_BL_02x01
+description: 2.54 mm Pin Header 2x1
+keywords: Connector, Header
+
+pinout: 1-2
+
+schematic:
+  symbol: connector
+  options: single
+
+housing:
+  pattern: custom
+  options: polarized
+  bodyWidth: 2.54
+  bodyLength: 5.08
+  height: 8.35
+
+  holeDiameter: 0.8
+  pitch: 2.54
+  rowCount: 2
+  columnCount: 1

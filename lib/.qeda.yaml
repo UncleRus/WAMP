@@ -1,9 +1,6 @@
 config:
   output: kicad
   pattern:
-    clearance:
-      padToMask: 0.2
-      padToPad: 0.2
     minimum:
       drillDiameter: 0.3
   symbol:
@@ -19,21 +16,26 @@ library:
   - espressif/esp32-wroom-32
   - st/ld1117
   - elcap-rad-str
+  - con/con_bl_02x01
   - con/con_bl_03x01
   - con/con_bl_04x01
   - con/con_bl_05x01
+  - con/con_bl_06x01
   - con/con_bl_07x01
+  - con/con_bl_08x01
   - con/con_bl_09x01
   - vt/mmbt3904
   - pcf8574
   - oled/ssd1322_256x64_312_module
   - rrd102
   - buttons/dts-6
-  - con/con_bl_08x01
   - st/tl072
-  - con/con_bl_06x01
+  - st/lm358
   - st/l78xx
   - ti/uln200x
+  - resistor/r1206
+  - ti/lm393
+  - capacitor/c1206
 power:
   - +12V
   - +5V

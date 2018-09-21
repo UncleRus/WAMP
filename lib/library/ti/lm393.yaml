@@ -1,0 +1,42 @@
+name: LM393
+variations: PDIP, SOIC
+description: Dual Operational Amplifier
+keywords: IC, Analog, OpAmp
+
+pinout:
+  1OUT: 1
+  1IN:
+    1IN+: 3
+    1IN-: 2
+  GND: 4
+  2IN:
+    2IN+: 5
+    2IN-: 6
+  2OUT: 7
+  VCC: 8
+
+properties:
+  power: VCC
+  ground: GND
+  in: 1IN+, 1IN-, 2IN+, 2IN-
+  out: 1OUT, 2OUT
+  inverted: 1IN-, 2IN-
+
+schematic:
+  symbol: IC
+  left: 1IN, 2IN, VCC
+  right: 1OUT, 2OUT, GND
+
+parts:
+  OpAmp 1: 1IN, 1OUT, VCC, GND
+  OpAmp 2: 2IN, 2OUT
+
+housing@PDIP:
+  outline: JEDEC MS-001 BA
+  suffix: N
+
+housing@SOIC:
+  outline: JEDEC MS-012 AA
+  suffix: M
+
+
