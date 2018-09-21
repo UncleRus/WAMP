@@ -1,6 +1,8 @@
 config:
   output: kicad
   pattern:
+    clearance:
+      padToMask: 0
     minimum:
       drillDiameter: 0.3
   symbol:
