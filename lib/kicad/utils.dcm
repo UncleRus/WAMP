@@ -4,4 +4,10 @@ $CMP ALPS-EC11E
 D Rotary encoder
 $ENDCMP
 #
+$CMP R_POTENTIOMETER
+D Potentiometer
+K resistor variable
+F ~
+$ENDCMP
+#
 #End Doc Library
