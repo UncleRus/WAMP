@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name WAMP)(type KiCad)(uri ${KIPRJMOD}/../lib/kicad/WAMP.pretty)(options "")(descr ""))
+  (lib (name utils)(type KiCad)(uri ${KIPRJMOD}/../lib/kicad/utils.pretty)(options "")(descr ""))
+)

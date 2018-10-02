@@ -38,9 +38,12 @@ library:
   - resistor/r1206
   - ti/lm393
   - capacitor/c1206
+  - ti/ne5532
 power:
   - +12V
   - +5V
   - +3V3
   - '-12V'
   - +9V
+  - +15V
+  - '-15V'

@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0 Date: 21/09/2018 19:23:11
+EESchema-DOCLIB  Version 2.0 Date: 26/09/2018 16:05:28
 #
 $CMP TDA7439DS
 D Three-band digitally-controlled audio processor
@@ -234,6 +234,16 @@ D Chip capacitor 3.2x1.6 mm
 K Capacitor
 $ENDCMP
 #
+$CMP NE5532P
+D Dual Operational Amplifier
+K IC, Analog, OpAmp
+$ENDCMP
+#
+$CMP NE5532D
+D Dual Operational Amplifier
+K IC, Analog, OpAmp
+$ENDCMP
+#
 $CMP +12V
 D Power Symbol
 $ENDCMP
@@ -251,6 +261,14 @@ D Power Symbol
 $ENDCMP
 #
 $CMP +9V
+D Power Symbol
+$ENDCMP
+#
+$CMP +15V
+D Power Symbol
+$ENDCMP
+#
+$CMP -15V
 D Power Symbol
 $ENDCMP
 #

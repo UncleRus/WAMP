@@ -1,0 +1,43 @@
+name: NE5532
+alias: SA5532
+variations: PDIP, SOIC
+description: Dual Operational Amplifier
+keywords: IC, Analog, OpAmp
+
+pinout:
+  1OUT: 1
+  1IN:
+    1IN+: 3
+    1IN-: 2
+  2IN:
+    2IN+: 5
+    2IN-: 6
+  2OUT: 7
+  PWR:
+    +U: 8
+    -U: 4
+
+properties:
+  power: +U, -U
+  in: 1IN+, 1IN-, 2IN+, 2IN-
+  out: 1OUT, 2OUT
+  inverted: 1IN-, 2IN-
+
+schematic:
+  symbol: IC
+  left: 1IN, 2IN, PWR
+  right: 1OUT, 2OUT
+
+parts:
+  OpAmp 1: 1IN, 1OUT, PWR
+  OpAmp 2: 2IN, 2OUT
+
+housing@PDIP:
+  outline: JEDEC MS-001 BA
+  suffix: P, AP
+
+housing@SOIC:
+  outline: JEDEC MS-012 AA
+  suffix: D, AD
+
+
