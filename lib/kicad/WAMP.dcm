@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0 Date: 26/09/2018 16:05:28
+EESchema-DOCLIB  Version 2.0 Date: 11/10/2018 20:47:41
 #
 $CMP TDA7439DS
 D Three-band digitally-controlled audio processor
@@ -242,6 +242,11 @@ $ENDCMP
 $CMP NE5532D
 D Dual Operational Amplifier
 K IC, Analog, OpAmp
+$ENDCMP
+#
+$CMP MAX4410EUD
+D 80mW, DirectDrive Stereo Headphone Driver with Shutdown
+K IC, Analog, Audio, Device, Headphone, Amplifier
 $ENDCMP
 #
 $CMP +12V

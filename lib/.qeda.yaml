@@ -39,6 +39,7 @@ library:
   - ti/lm393
   - capacitor/c1206
   - ti/ne5532
+  - max4410
 power:
   - +12V
   - +5V

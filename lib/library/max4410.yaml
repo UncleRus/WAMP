@@ -1,0 +1,42 @@
+name: MAX4410
+variations: TSSOP
+description: 80mW, DirectDrive Stereo Headphone Driver with Shutdown
+keywords: IC, Analog, Audio, Device, Headphone, Amplifier
+
+pinout@TSSOP:
+  IN:
+    INL: 10
+    INR: 13
+  OUT:
+    OUTL: 8
+    OUTR: 11
+  CTRL:
+    ~SHDNL: 1
+    ~SHDNR: 12
+  PUMP:
+    C1P: 3
+    C1N: 5
+  POWER:
+    PVDD: 2
+    SVDD: 9
+    PVSS: 6
+    SVSS: 7
+  GROUND:
+    PGND: 4
+    SGND: 14
+  
+properties:
+  in: IN, CTRL
+  out: OUT
+  power: POWER
+  ground: GROUND
+  passive: PUMP
+
+schematic:
+  symbol: IC
+  left: IN, CTRL, PUMP
+  right: OUT, POWER, GROUND
+
+housing@TSSOP:
+  outline: JEDEC MO-153 AB-1
+  suffix: EUD
