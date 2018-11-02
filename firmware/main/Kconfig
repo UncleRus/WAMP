@@ -1,0 +1,125 @@
+menu "WAMP"
+
+	menu "Event queue"
+
+		config EVENT_QUEUE_SIZE
+		    int "Event queue max size"
+		    default 100
+		
+		config EVENT_MAX_SIZE
+		    int "Maximum event size, bytes"
+		    default 64
+		
+		config EVENT_MAX_LISTENERS
+		    int "Maximum event loop listeners"
+		    default 128
+		    
+		config EVENT_LOOP_STACK_SIZE
+		    int "Event loop stack size"
+		    default 8192
+		    
+		config EVENT_LOOP_PRIORITY
+			int "Event loop task priority"
+		    default 5
+		    
+		choice
+			prompt "CPU for event loop"
+			config EVENT_LOOP_CPU_1
+				bool "APP_CPU"
+			config EVENT_LOOP_CPU_0
+				bool "PRO_CPU"
+		endchoice
+		
+		config EVENT_LOOP_CPU
+			int
+		    default 1
+		    default 0 if EVENT_LOOP_CPU_0
+
+	endmenu
+
+	menu "Rotary encoders"
+	
+		config RE_MAX
+			int "Maximum number of rotary encoders"
+			default 1
+			
+		config RE_INTERVAL_US
+			int "Polling interval, us"
+			default 1000
+		
+		config RE_BTN_DEAD_TIME_US
+			int "Button dead time, us"
+			default 10000
+			
+		choice
+			prompt "Logical level on pressed button"
+			config RE_BTN_PRESSED_LEVEL_0
+				bool "Low"
+			config RE_BTN_PRESSED_LEVEL_1
+				bool "High"
+		endchoice
+	
+		config RE_BTN_PRESSED_LEVEL
+			int
+			default 0
+			default 1 if RE_BTN_PRESSED_LEVEL_1
+		
+		config RE_BTN_LONG_PRESS_TIME_US
+			int "Long press timeout, us"
+			default 500000
+	
+		config RE_A_GPIO
+			int "Rotary encoder pin A"
+			default 22
+		
+		config RE_B_GPIO
+			int "Rotary encoder pin B"
+			default 23
+			
+		config RE_BTN_GPIO
+			int "Rotary encoder button"
+			default 25
+			
+	endmenu
+	
+	menu "GPIO setup"
+	
+		config I2C_SCL_GPIO
+			int "I2C bus SCL line"
+			default 19
+
+		config I2C_SDA_GPIO
+			int "I2C bus SDA line"
+			default 21
+		
+		config PH_SWITCH_GPIO
+			int "Headphones output switch"
+			default 27
+			
+		config ONEWIRE_GPIO
+			int "1-wire line"
+			default 17
+		
+	endmenu
+	
+	menu "Keyboard"
+	
+		config KEYBOARD_ADDR
+			int "PCF8574T I2C address"
+			default 33
+		
+		config KEYBOARD_INTR_GPIO
+			int "Interrupt pin GPIO"
+			default 26
+
+	endmenu
+	
+	menu "Input selector"
+		
+		config SELECTOR_ADDR
+			int "PCF8574T I2C address"
+			default 35
+
+	endmenu
+	
+endmenu

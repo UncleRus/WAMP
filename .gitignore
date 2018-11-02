@@ -27,3 +27,12 @@ _autosave-*
 
 gerber/
 .*#
+
+
+# C
+build/
+.project
+.cproject
+.settings/
+sdkconfig.old
+
