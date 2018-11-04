@@ -39,6 +39,32 @@ menu "WAMP"
 
 	menu "Rotary encoders"
 	
+		choice
+			prompt "Timer group"
+			config RE_TGROUP_0
+				bool "0"
+			config RE_TGROUP_1
+				bool "1"
+		endchoice
+	
+		config RE_TGROUP
+			int
+			default 0
+			default 1 if RE_TGROUP_1
+
+		choice
+			prompt "Timer"
+			config RE_TIMER_0
+				bool "0"
+			config RE_TIMER_1
+				bool "1"
+		endchoice
+	
+		config RE_TIMER
+			int
+			default 1
+			default 0 if RE_TIMER_0
+	
 		config RE_MAX
 			int "Maximum number of rotary encoders"
 			default 1
@@ -69,35 +95,48 @@ menu "WAMP"
 			default 500000
 	
 		config RE_A_GPIO
-			int "Rotary encoder pin A"
+			int "Rotary encoder pin A GPIO"
 			default 22
 		
 		config RE_B_GPIO
-			int "Rotary encoder pin B"
+			int "Rotary encoder pin B GPIO"
 			default 23
 			
 		config RE_BTN_GPIO
-			int "Rotary encoder button"
+			int "Rotary encoder button GPIO"
 			default 25
 			
 	endmenu
 	
-	menu "GPIO setup"
+	menu "I2C setup"
+	
+		choice
+			prompt "I2C port"
+			config I2C_PORT_0
+				bool "0"
+			config I2C_PORT_1
+				bool "1"
+		endchoice
+	
+		config I2C_PORT
+			int
+			default 0
+			default 1 if I2C_PORT_1
 	
 		config I2C_SCL_GPIO
-			int "I2C bus SCL line"
+			int "I2C bus SCL GPIO"
 			default 19
 
 		config I2C_SDA_GPIO
-			int "I2C bus SDA line"
+			int "I2C bus SDA GPIO"
 			default 21
 		
-		config PH_SWITCH_GPIO
-			int "Headphones output switch"
-			default 27
-			
+	endmenu
+	
+	menu "1-Wire setup"
+	
 		config ONEWIRE_GPIO
-			int "1-wire line"
+			int "1-Wire line GPIO"
 			default 17
 		
 	endmenu
@@ -111,7 +150,19 @@ menu "WAMP"
 		config KEYBOARD_INTR_GPIO
 			int "Interrupt pin GPIO"
 			default 26
-
+			
+		config KEYBOARD_TASK_STACK
+			int "Port read task stack size"
+			default 2048
+		
+		config KEYBOARD_TASK_PRIORITY
+			int "Port read task priority"
+			default 5
+			
+		config KEYBOARD_EVENT_TIMEOUT
+			int "Event post timeout, ms"
+			default 100
+			
 	endmenu
 	
 	menu "Input selector"
@@ -122,4 +173,8 @@ menu "WAMP"
 
 	endmenu
 	
+	config PH_SWITCH_GPIO
+		int "Headphones output switch GPIO"
+		default 27
+			
 endmenu

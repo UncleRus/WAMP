@@ -10,25 +10,6 @@ extern "C" {
 #include <freertos/FreeRTOS.h>
 #include <freertos/queue.h>
 
-#ifndef CONFIG_EVENT_QUEUE_SIZE
-    #define CONFIG_EVENT_QUEUE_SIZE 100
-#endif
-#ifndef CONFIG_EVENT_MAX_SIZE
-    #define CONFIG_EVENT_MAX_SIZE 64
-#endif
-#ifndef CONFIG_EVENT_MAX_LISTENERS
-    #define CONFIG_EVENT_MAX_LISTENERS 128
-#endif
-#ifndef CONFIG_EVENT_LOOP_STACK_SIZE
-    #define CONFIG_EVENT_LOOP_STACK_SIZE 8192
-#endif
-#ifndef CONFIG_EVENT_LOOP_PRIORITY
-    #define CONFIG_EVENT_LOOP_PRIORITY 5
-#endif
-#ifndef CONFIG_EVENT_LOOP_CPU
-    #define CONFIG_EVENT_LOOP_CPU 1
-#endif
-
 typedef enum {
     ET_NONE,
     ET_ENCODER,

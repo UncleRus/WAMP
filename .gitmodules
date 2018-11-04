@@ -1,0 +1,3 @@
+[submodule "firmware/lib/esp-idf-lib"]
+	path = firmware/lib/esp-idf-lib
+	url = git@github.com:UncleRus/esp-idf-lib.git

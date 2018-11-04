@@ -12,8 +12,10 @@
 #include <driver/periph_ctrl.h>
 #include <driver/timer.h>
 #include <string.h>
-#include "event.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/queue.h>
 #include <freertos/semphr.h>
+#include "event.h"
 
 #define MUTEX_TIMEOUT 10
 
@@ -96,7 +98,7 @@ inline static void read_encoder(rotary_encoder_t *re)
     if (re->store == 0x2b || re->store == 0xd4) inc = -re->step;
     if (re->store == 0x17 || re->store == 0xe8) inc = re->step;
 
-    if ((re->value <= re->min && inc < 0) || (re->value >= re->max && inc > 0))
+    if ((re->min != re->max) && ((re->value <= re->min && inc < 0) || (re->value >= re->max && inc > 0)))
         return;
 
     re->value += inc;
@@ -186,6 +188,7 @@ esp_err_t rotary_encoder_add(rotary_encoder_t *re)
     memset(&io_conf, 0, sizeof(gpio_config_t));
     io_conf.mode = GPIO_MODE_INPUT;
     io_conf.pull_up_en = GPIO_PULLUP_ENABLE;
+    io_conf.intr_type = GPIO_INTR_DISABLE;
     io_conf.pin_bit_mask = GPIO_BIT(re->pin_a) | GPIO_BIT(re->pin_b);
     if (re->pin_btn < GPIO_NUM_MAX)
         io_conf.pin_bit_mask |= GPIO_BIT(re->pin_btn);

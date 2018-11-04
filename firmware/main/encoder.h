@@ -7,36 +7,10 @@
 #ifndef _HW_ENCODER_H_
 #define _HW_ENCODER_H_
 
-#include <freertos/FreeRTOS.h>
-#include <freertos/task.h>
-#include <freertos/queue.h>
 #include <driver/gpio.h>
 
 #ifdef __cplusplus
 extern "C" {
-#endif
-
-#ifndef CONFIG_RE_MAX
-    #define CONFIG_RE_MAX 16
-#endif
-#ifndef CONFIG_RE_INTERVAL_US
-    #define CONFIG_RE_INTERVAL_US 1000 // 1 kHz
-#endif
-#ifndef CONFIG_RE_BTN_DEAD_TIME_US
-    #define CONFIG_RE_BTN_DEAD_TIME_US 10000 // 10 ms
-#endif
-#ifndef CONFIG_RE_BTN_PRESSED_LEVEL
-    #define CONFIG_RE_BTN_PRESSED_LEVEL 0 // pressed = low
-#endif
-#ifndef CONFIG_RE_BTN_LONG_PRESS_TIME_US
-    #define CONFIG_RE_BTN_LONG_PRESS_TIME_US 500000 // 500 ms
-#endif
-
-#ifndef CONFIG_RE_TGROUP
-    #define CONFIG_RE_TGROUP 0
-#endif
-#ifndef CONFIG_RE_TIMER
-    #define CONFIG_RE_TIMER 1
 #endif
 
 typedef enum {
